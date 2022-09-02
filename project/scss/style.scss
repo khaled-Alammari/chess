@@ -1,0 +1,21 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    --game-size: 95;
+    --main-gold-color: goldenrod;
+    --main-dark-gold-color: rgb(141, 111, 34);
+    --main-light-gold-color: gold;
+    --main-green-color: rgb(65, 196, 76);
+    --main-dark-green-color: rgb(20, 131, 29);
+    --main-light-green-color: rgb(100, 255, 113);
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}

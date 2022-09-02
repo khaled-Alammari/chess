@@ -1,0 +1,16 @@
+doctype
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        link(rel="stylesheet" href="./style.css")
+        script(src="./main.js" type="module")
+        title شطرنج | Chess
+    body
+        include ./helpers/timer
+        include ./helpers/game-board
+        include ./helpers/winning-board
+        include ./helpers/improving-board
+
+        script(src="http://localhost:35729/livereload.js")

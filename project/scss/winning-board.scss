@@ -1,0 +1,57 @@
+body {
+    .winning-board {
+        position: absolute;
+        background-color: #666;
+        padding: 6vmin;
+        font-size: 8vmin;
+        font-weight: bold;
+        height: 80vmin;
+        width: 80vmin;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        bottom: -80vh;
+        transition: 1s;
+        z-index: 1;
+        .winner {
+            display: flex;
+            flex-direction: column;
+            gap: 2vmin;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+            .avatar {
+                --white: #444;
+                --black: #8e8e8e;
+                border-radius: 2vmin;
+                height: 16vmin;
+                width: 16vmin;
+                border: .7vmin solid var(--main-gold-color);
+                background-color: var(--black);
+                padding: 1.2vmin;
+                box-shadow:
+                inset .5vmin .5vmin #666,
+                .5vmin .5vmin var(--black);
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        .restart {
+            background-color: var(--main-gold-color);
+            padding: 1vmin 4vmin;
+            cursor: pointer;
+            box-shadow:
+            inset .5vmin .5vmin #666,
+            .5vmin .5vmin var(--main-gold-color);
+            border-radius: 1vmin;
+            border: .5vmin solid var(--main-dark-gold-color);
+            transition: .1s;
+            &:hover {
+                filter: brightness(1.1);
+            }
+        }
+    }
+}
